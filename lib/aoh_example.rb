@@ -15,14 +15,10 @@ end
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
-  aoh = [
-    { name:  "Don Gately", occupation: "Live-in Staff" }
-    { name:  "Joelle van Dyne", occupation: "Radio Personality" }
-    { name:  "Pat Monteseian", occupation: "Staff" }
-    { name:  "Kate Gompert", occupation: "None" }
-    { name:  "Bruce Green", occupation: "Fan of Mildred" }
-    
-    
+  aoh = [ DON_G[:name], DON_G[:occupation], JOELLE_VD[:name],
+  JOELLE_VD[:occupation], PAT_M[:name], PAT_M[:occupation], 
+  KATE_G[:name], KATE_G[:occupation], BRUCE_G[:name], 
+  BRUCE_G[:occupation]
   ]
 end
 
